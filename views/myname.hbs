@@ -1,0 +1,15 @@
+<h1>Here is all you need to know about me</h1>
+<h2>My name is {{me.name}}</h2>
+<p>My name is <strong>{{me.name}}</strong>. I am {{me.age}} years old. I was born in {{me.hometown}}, a very nice place in the country,  {{me.country}} </p>
+
+{{#if visitor}}
+<p>Hello {{visitor.first}} {{visitor.middle}}</p>
+{{/if}}
+
+<h2>Enter some details here</h2>
+<form action= "/user" method="POST">
+<input type= "text" name= "Username" placeholder="Username" class= "form-control">
+<input type= "number" name= "age" placeholder= "How old are you?" class= "form-control">
+<input type= "email" name= "email" placeholder= "me@example.com" class= "form-control">
+<button type= "submit" class= "btn btn-info">Submit</button>
+</form>
